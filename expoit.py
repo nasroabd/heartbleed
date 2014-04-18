@@ -47,13 +47,13 @@ hb = h2bin('''
 01 40 00
 ''')
 def sendmail(toemail):
-   fromaddr = 'sender@email.com'
+   fromaddr = 'sender@gmail.com'
 # Writing the message (this message will appear in the email)
    msg = 'Your website is vulnerable to HeartBleed attack!'
 # Gmail Login
 
-   username = 'email_username'
-   password = 'email_password'
+   username = ‘gmail_username'
+   password = ‘gmail_password'
 
 # Sending the mail  
 
@@ -142,7 +142,7 @@ def main():
     
     s.send(hb)
     b = hit_hb(s)
-    if b == True:
+    if b == False:
 	print site+" is not vulnerable"
     else:
 	print site+" is VULNERABLE!"
